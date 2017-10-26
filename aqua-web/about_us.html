@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AQUA</title>
+  <link href="https://fonts.googleapis.com/css?family=Bitter:400,700" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body id="about">
+  
+<!--header始まり-->
+  <header>
+  <!-- ロゴの画像の表示、Homeへのリンク化-->
+  <!--クラス：ロゴ-->
+      <div class="logo">
+      <a href="home.html"><img src="images/logo_big.png" alt="AQUA logo"></a>
+      </div> 
+        <nav>
+        <!--クラス；グローバルナビ-->
+        <ul class="global-nav">
+            <!--メニュー内要素(ページ名)-->
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about_us.html">About us</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="publication.html">Publications</a></li>
+            <!--論文、ポスターなど-->
+            <li><a href="members.html">Members</a></li>
+            <!--メンバー-->
+            <li><a href="for_students.html">For students</a></li>
+            <!--履修の仕方、入門書や簡単な分野の説明-->
+            <li><a href="links.html">Links</a></li>
+            <li><a href="access.html">Access</a></li>
+          </ul>
+    </nav>
+  </header>
+  <!--header終わり-->
+    
+<!--wrap始まり-->
+<div id="wrap">
+  <!--クラス：コンテンツ-->
+  <div class="content">
+    <div class="main-center">
+    <h1>About us</h1>
+      <p>AQUAは<a href="https://rg.sfc.keio.ac.jp">慶應義塾大学湘南藤沢キャンパス徳田・村井・楠本・中村・高汐・バンミーター・植原・三次・中澤合同研究プロジェクト</a>内の研究グループです。</p>
+      <p>専門分野：量子計算、ムーアの法則後のコンピュータ・アーキテクチャ、ディストリビューテド・マス・ストレージ・システム</p>
+      <div align="center">
+     <img src="images/komaka-from-the-water.jpg" width="サイズ" height="サイズ" alt="random_picture">
+     </div>
+    <section class="about clearfix">
+    <div class="about-txt">
+    <h2 class="icon">AQUA = Advancing Quantum Architecture　(先進的量子アーキテクチャー）</h2>
+    <p>ムーアの法則（半導体の集積密度は18～24ヶ月で倍増するという法則）は技術的、原理的な問題のため、2010年代には通用しなくなると予想されています。すなわち、私たちが現在使っている古典的なコンピュータの性能の向上が限界に達しようとしているということです。
+</p>
+      <p>そこで登場するのが全く新しい計算機である<span>量子コンピュータ</span>です。これは量子力学の特殊な性質を利用することで、既存のものでは為し得ない超高速な計算が可能になるコンピュータです。
+      ムーアの法則後のコンピューティング技術として現在大いに期待されているものです。</p>
+    <p>そのような背景のもと、<span>AQUA</span>では、大規模な量子コンピュータの開発を加速するために、
+そのシステム構成、サーキット構造、およびアルゴリズムを研究しています。</p>
+      <video controls poster="movies/futurelearn.png" width="640" height="480">
+<source src="movies/UnderstandingQuantumComputers.mp4">
+<p>動画を再生するには、videoタグをサポートしたブラウザが必要です。</p>
+</video>
+      
+    </div>
+      <img src="images/Bloch.png" alt="関連画像" class="about-image">
+      </section>
+      <section class="news">
+      <h2 class="icon">News</h2>
+        <p>上のスクロール：IFRAME  news.htmlみたいな外部htmlを作って参照してる
+        デメリットは、アドレスに毎回target="_blank"を打たないと枠内でサイトを開く.......</p>
+<!--ニュースの埋め込み。news.htmlを編集するとそのまま反映されます。s-->
+        <IFRAME src="news.html" width=500 height=150>
+</IFRAME>
+        <p>下のスクロール：DIV allign このHTMLに直接書くだけ。つまりここで整える。(昔の持ってくるのがちょっとめんどくさい&日付無しになるかも )(上でも日付無しになりそうだけど)</p>
+        <DIV align="left" style="overflow-y:scroll;width:500px;height:150px;"><font color =black>
+- News  更新履歴 -<br>
+2017 10/02 - <a href="home.html">AQUA webサイト</a>リニューアル<br>
+2017 09/01 - yume(B2),Mitei(B1)が加入しました!<br>
+2017 04/01 - paton(B2)が加入しました!<br>
+2017 00/00 - <a href="***/***.html">虚無なページリンク</a><br>
+2017 00/00 - <a href="***/***.html">虚無なページリンク</a><br>
+2017 00/00 - <a href="***/***.html">虚無なページリンク</a><br>
+2017 00/00 - <a href="***/***.html">虚無なページリンク</a><br>
+XXXX XX/XX - <br>
+More(history)<br>
+          </font>
+        </DIV>
+        
+      </section>  
+  </div>
+    <p class="btn"><a href="research.html">Research</a></p><!--ボタンにする class btn-->
+    
+  </div>
+</div>
+<!--wrap終わり-->
+    
+<!--footer始まり-->
+  <footer>
+    <small>&copy;2007-2017 Tokuda/Murai/Kusumoto/Nakamura/Takashio/Van Meter/Uehara/Mitsugi/Nakazawa Laboratories.
+All Rights Reserved.</small><br>
+    <small><a href="mailto:aqua@sfc.wide.ad.jp">お問い合わせ</a></small>
+  </footer>
+<!--hooter終わり-->
+</body>
+</html>

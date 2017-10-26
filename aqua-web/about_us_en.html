@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AQUA</title>
+  <link href="https://fonts.googleapis.com/css?family=Bitter:400,700" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body id="about">
+  
+<!--header始まり-->
+  <header>
+  <!-- ロゴの画像の表示、Homeへのリンク化-->
+  <!--クラス：ロゴ-->
+      <div class="logo">
+      <a href="home.html"><img src="images/logo_big.png" alt="AQUA logo"></a>
+      </div> 
+        <nav>
+        <!--クラス；グローバルナビ-->
+        <ul class="global-nav">
+            <!--メニュー内要素(ページ名)-->
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about_us.html">About us</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="publication.html">Publications</a></li>
+            <!--論文、ポスターなど-->
+            <li><a href="members.html">Members</a></li>
+            <!--メンバー-->
+            <li><a href="for_students.html">For students</a></li>
+            <!--履修の仕方、入門書や簡単な分野の説明-->
+            <li><a href="links.html">Links</a></li>
+            <li><a href="access.html">Access</a></li>
+          </ul>
+    </nav>
+  </header>
+  <!--header終わり-->
+    
+<!--wrap始まり-->
+<div id="wrap">
+  <!--クラス：コンテンツ-->
+  <div class="content">
+    <div class="main-center">
+    <h1>About us</h1>
+      <p>AQUA is a research group within Keio University Shonan Fujisawa Campus <a href="https://rg.sfc.keio.ac.jp/index.en.html">Tokuda, Murai, Kusumoto, Nakamura, Takashi, Banmi, Uehara, Mitsumi and Nakazawa Joint Research Project.</a></p>
+      <p>Field: Quantum Computation, Post Moore Computer Architecture, Distributed Mass Storage System</p>
+      <div align="center">
+     <img src="images/komaka-from-the-water.jpg" width="サイズ" height="サイズ" alt="random_picture">
+     </div>
+    <section class="about clearfix">
+    <div class="about-txt">
+    <h2 class="icon">AQUA = Advancing Quantum Architecture </h2>
+    <p>ムーアの法則（半導体の集積密度は18～24ヶ月で倍増するという法則）は技術的、原理的な問題のため、2010年代には通用しなくなると予想されています。すなわち、私たちが現在使っている古典的なコンピュータの性能の向上が限界に達しようとしているということです。
+</p>
+      <p>そこで登場するのが全く新しい計算機である<span>量子コンピュータ</span>です。これは量子力学の特殊な性質を利用することで、既存のものでは為し得ない超高速な計算が可能になるコンピュータです。
+      ムーアの法則後のコンピューティング技術として現在大いに期待されているものです。</p>
+    <p>そのような背景のもと、<span>AQUA</span>では、大規模な量子コンピュータの開発を加速するために、
+そのシステム構成、サーキット構造、およびアルゴリズムを研究しています。</p>
+      <p>The <span>AQUA</span> group is researching system organizations, circuit structures
+and algorithms to accelerate the development of large-scale quantum computers.</p>
+<h2 class="icon">Future Learn -Online corse</h2>
+      <p>2017年秋より国際的な大規模公開オンライン講座（MOOCs）配信事業体のFutureLearnで量子コンピュータに関する講座を公開しています。環境情報学部のRod Van Meter准教授が講師をつとめ、国内外の高校生や学生、これから量子コンピュータの分野に取り組もうと考えている方に向けて、量子コンピュータとは何か、身近な生活にどのように役立つのか、実用化に向けた取り組み等をわかりやすく伝えるコースです。言語は英語（一部日本語）で、英語の字幕が利用可能です。受講者同士のディスカッションは英語で行われます。なお、受講料は無料です。</p>
+      <p>From the fall of 2017, we have released a course on quantum computers at FutureLearn, an international large online publicity online course (MOOCs) delivery entity. For Associate Professor Rod Van Meter of the Faculty of Environment and Information Studies, lecturer, who is planning to tackle the fields of domestic and international high school students, students, and quantum computers from now on, what is a quantum computer, how to live nearby It is a course that makes it easy to understand whether it is useful for practical application or not. Language is English (some Japanese), English subtitles are available. Discussions between students are conducted in English. Tuition fee is free.</p>
+      <p>Course name: Understanding Quantum Computers<br>
+Period: 3 weeks beginning on Monday 2 October (tentative)<br>
+Registration: Now open (free)</p>
+      <p>In this course, we will discuss the motivation for building quantum computers, cover the important principles in quantum computing, and take a look at some of the important quantum computing algorithms.
+We will finish with a brief look at quantum computing hardware and the budding quantum information technology industry.</p>
+      <a href="https://www.futurelearn.com/courses/intro-to-quantum-computing">Understanding Quantum Computers</a>
+<video controls poster="firstframe.jpg" width="640" height="480">
+<source src="movies/UnderstandingQuantumComputers.mp4">
+<p>動画を再生するには、videoタグをサポートしたブラウザが必要です。</p>
+</video>
+      
+      
+    </div>
+      <img src="images/Bloch.png" alt="関連画像" class="about-image">
+      </section>
+      <section class="news">
+      <h2 class="icon">News</h2>
+        <p>上のスクロール：IFRAME  news.htmlみたいな外部htmlを作って参照してる
+        デメリットは、アドレスに毎回target="_blank"を打たないと枠内でサイトを開く.......</p>
+<!--ニュースの埋め込み。news.htmlを編集するとそのまま反映されます。s-->
+        <IFRAME src="news.html" width=500 height=150>
+</IFRAME>
+        <p>下のスクロール：DIV allign このHTMLに直接書くだけ。つまりここで整える。(昔の持ってくるのがちょっとめんどくさい&日付無しになるかも )(上でも日付無しになりそうだけど)</p>
+        <DIV align="left" style="overflow-y:scroll;width:500px;height:150px;"><font color =black>
+- News  更新履歴 -<br>
+2017 10/02 - <a href="home.html">AQUA webサイト</a>リニューアル<br>
+2017 09/01 - yume(B2),Mitei(B1)が加入しました!<br>
+2017 04/01 - paton(B2)が加入しました!<br>
+2017 00/00 - <a href="***/***.html">虚無なページリンク</a><br>
+2017 00/00 - <a href="***/***.html">虚無なページリンク</a><br>
+2017 00/00 - <a href="***/***.html">虚無なページリンク</a><br>
+2017 00/00 - <a href="***/***.html">虚無なページリンク</a><br>
+XXXX XX/XX - <br>
+More(history)<br>
+          </font>
+        </DIV>
+        
+      </section>  
+  </div>
+    <p class="btn"><a href="research.html">Research</a></p><!--ボタンにする class btn-->
+    
+  </div>
+</div>
+<!--wrap終わり-->
+    
+<!--footer始まり-->
+  <footer>
+    <small>&copy;2007-2017 Tokuda/Murai/Kusumoto/Nakamura/Takashio/Van Meter/Uehara/Mitsugi/Nakazawa Laboratories.
+All Rights Reserved.</small><br>
+    <small><a href="mailto:aqua@sfc.wide.ad.jp">お問い合わせ</a></small>
+  </footer>
+<!--hooter終わり-->
+</body>
+</html>
